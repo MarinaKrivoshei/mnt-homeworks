@@ -4,13 +4,14 @@
 
 1. Опишите основные плюсы и минусы pull и push систем мониторинга.
 
+
 2. Какие из ниже перечисленных систем относятся к push модели, а какие к pull? А может есть гибридные?
 
-    - Prometheus 
-    - TICK
-    - Zabbix
-    - VictoriaMetrics
-    - Nagios
+    - Prometheus pull-модель
+    - TICK push-модель
+    - Zabbix гибридный
+    - VictoriaMetrics push
+    - Nagios pull
 
 3. Склонируйте себе [репозиторий](https://github.com/influxdata/sandbox/tree/master) и запустите TICK-стэк, 
 используя технологии docker и docker-compose.(по инструкции ./sandbox up )
