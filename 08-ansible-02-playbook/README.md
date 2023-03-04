@@ -31,6 +31,7 @@ https://github.com/MarinaKrivoshei/mnt-homeworks/tree/main/08-ansible-02-playboo
 
 ### Как оформить ДЗ?
 
+
 Выполненное домашнее задание пришлите ссылкой на .md-файл в вашем репозитории.
 
 ---
