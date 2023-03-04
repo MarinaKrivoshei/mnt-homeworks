@@ -4,12 +4,13 @@
 
 1. (Необязательно) Познакомтесь с [lighthouse](https://youtu.be/ymlrNlaHzIY?t=929)
 2. Подготовьте в Yandex Cloud три хоста: для `clickhouse`, для `vector` и для `lighthouse`.
-
+![img.png](img.png)
 Ссылка на репозиторий LightHouse: https://github.com/VKCOM/lighthouse
 
 ## Основная часть
 
 1. Допишите playbook: нужно сделать ещё один play, который устанавливает и настраивает lighthouse.
+![img_1.png](img_1.png)
 2. При создании tasks рекомендую использовать модули: `get_url`, `template`, `yum`, `apt`.
 3. Tasks должны: скачать статику lighthouse, установить nginx или любой другой webserver, настроить его конфиг для открытия lighthouse, запустить webserver.
 4. Приготовьте свой собственный inventory файл `prod.yml`.
