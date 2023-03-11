@@ -1,3 +1,4 @@
+```
 - name: Install nginx
   hosts: lighthouse
   handlers:
@@ -29,6 +30,8 @@
         mode: 0644
       notify: reload-nginx
       tags: nginx
+  ```
+
 
 
 - name: Install lighthouse
@@ -60,3 +63,10 @@
         mode: 0644
       notify: reload-nginx
       tags: lighthouse
+  ```
+
+
+
+
+
+
