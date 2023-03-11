@@ -1,3 +1,6 @@
+### Playbook
+___
+Дополняем playbook данными для NGINX.
 ```
 - name: Install nginx
   hosts: lighthouse
@@ -21,7 +24,10 @@
         name: nginx
         state: present
       notify: start-nginx
-      tags: nginx
+      tags: nginx 
+ ```
+Создается конфиг NGINX
+ ```
     - name: Create config NGINX
       become: true
       template:
@@ -40,12 +46,18 @@
     - name: reload-nginx
       become: true
       command: nginx -s reload
+ ```
+Прописывается pre_tasks, в которой устанавливаем GIT.
+```
   pre_tasks:
     - name: Install git
       become: true
       ansible.builtin.yum:
         name: git
         state: present
+ ```
+И указываем tasks, который скачивает lighthouse с git. Создает конфиг lighthouse и делает перезагрузку nginx
+```
   tasks:
     - name: Copy Lighthouse from git
       git:
@@ -69,4 +81,4 @@
 
 
 
-
+![img.png](img.png)
