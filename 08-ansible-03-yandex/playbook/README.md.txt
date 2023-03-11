@@ -33,7 +33,7 @@
   ```
 
 
-
+```
 - name: Install lighthouse
   hosts: lighthouse
   handlers:
